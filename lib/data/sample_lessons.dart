@@ -1,0 +1,248 @@
+import '../models/lesson.dart';
+
+/// All lessons organized by course.
+final List<Lesson> sampleLessons = [
+  // ─── Darussa Daga Cikin Rayuwan Sheikh Zarban Alghamidy ──
+  Lesson(
+    id: 'darussa_1',
+    title: 'Darussa Daga Cikin Rayuwan Sheikh Zarban Alghamidy - Part 1',
+    scholarName: 'Dr. Jameel Muhammad Sadis',
+    description: 'Part one of Darussa Daga Cikin Rayuwan Sheikh Zarban Alghamidy.',
+    audioAssetPath: 'assets/audio/Darussa_Daga_Cikin_Rayuwan_Sheikh_Zarban_Alghamidy_1.ogg',
+    duration: Duration(minutes: 86, seconds: 20),
+    timeOfDay: LessonTime.any,
+    course: 'Darussa Daga Cikin Rayuwan Sheikh Zarban Alghamidy',
+    scholarPhotoPath: 'assets/images/scholar_drjameel.png',
+  ),
+  Lesson(
+    id: 'darussa_2',
+    title: 'Darussa Daga Cikin Rayuwan Sheikh Zarban Alghamidy - Part 2',
+    scholarName: 'Dr. Jameel Muhammad Sadis',
+    description: 'Part two of Darussa Daga Cikin Rayuwan Sheikh Zarban Alghamidy.',
+    audioAssetPath: 'assets/audio/Darussa_Daga_Cikin_Rayuwan_Sheikh_Zarban_Alghamidy_2.ogg',
+    duration: Duration(minutes: 86, seconds: 38),
+    timeOfDay: LessonTime.any,
+    course: 'Darussa Daga Cikin Rayuwan Sheikh Zarban Alghamidy',
+    scholarPhotoPath: 'assets/images/scholar_drjameel.png',
+  ),
+
+  // ─── Siffofin Bayin Allah Na Kwarai ──────────────────────
+  Lesson(
+    id: 'siffofin_1',
+    title: 'Siffofin Bayin Allah Na Kwarai - Part 1',
+    scholarName: 'Dr. Jameel Muhammad Sadis',
+    description: 'Part one of Siffofin Bayin Allah Na Kwarai.',
+    audioAssetPath: 'assets/audio/Siffofin_Bayin_Allah_Na_Kwarai_1.ogg',
+    duration: Duration(minutes: 59, seconds: 34),
+    timeOfDay: LessonTime.any,
+    course: 'Siffofin Bayin Allah Na Kwarai',
+    scholarPhotoPath: 'assets/images/scholar_drjameel.png',
+  ),
+  Lesson(
+    id: 'siffofin_2',
+    title: 'Siffofin Bayin Allah Na Kwarai - Part 2',
+    scholarName: 'Dr. Jameel Muhammad Sadis',
+    description: 'Part two of Siffofin Bayin Allah Na Kwarai.',
+    audioAssetPath: 'assets/audio/Siffofin_Bayin_Allah_Na_Kwarai_2.ogg',
+    duration: Duration(minutes: 51, seconds: 0),
+    timeOfDay: LessonTime.any,
+    course: 'Siffofin Bayin Allah Na Kwarai',
+    scholarPhotoPath: 'assets/images/scholar_drjameel.png',
+  ),
+
+  // ─── Tasirin Zunubai Akan Al'Ummah ───────────────────────
+  Lesson(
+    id: 'tasirin_1',
+    title: 'Tasirin Zunubai Akan Al\'Ummah - Part 1',
+    scholarName: 'Dr. Jameel Muhammad Sadis',
+    description: 'Part one of Tasirin Zunubai Akan Al\'Ummah.',
+    audioAssetPath: 'assets/audio/Tasirin_Zunubai_Akan_AlUmmah_1.ogg',
+    duration: Duration(minutes: 63, seconds: 31),
+    timeOfDay: LessonTime.any,
+    course: 'Tasirin Zunubai Akan Al\'Ummah',
+    scholarPhotoPath: 'assets/images/scholar_drjameel.png',
+  ),
+  Lesson(
+    id: 'tasirin_2',
+    title: 'Tasirin Zunubai Akan Al\'Ummah - Part 2',
+    scholarName: 'Dr. Jameel Muhammad Sadis',
+    description: 'Part two of Tasirin Zunubai Akan Al\'Ummah.',
+    audioAssetPath: 'assets/audio/Tasirin_Zunubai_Akan_AlUmmah_2.ogg',
+    duration: Duration(minutes: 67, seconds: 50),
+    timeOfDay: LessonTime.any,
+    course: 'Tasirin Zunubai Akan Al\'Ummah',
+    scholarPhotoPath: 'assets/images/scholar_drjameel.png',
+  ),
+
+  // ─── Ya Ubangiji Allah Nayi Gaggawa ──────────────────────
+  Lesson(
+    id: 'ya_ubangiji_1',
+    title: 'Ya Ubangiji Allah Nayi Gaggawa Ne Zuwa Gareka Don In Samu Yerdarka - Part 1',
+    scholarName: 'Dr. Jameel Muhammad Sadis',
+    description: 'Part one of Ya Ubangiji Allah Nayi Gaggawa.',
+    audioAssetPath: 'assets/audio/Ya_Ubangiji_Allah_Nayi_Gaggawa_Ne_Zuwa_Gareka_Don_In_Samu_Yerdarka_1.ogg',
+    duration: Duration(minutes: 66, seconds: 31),
+    timeOfDay: LessonTime.any,
+    course: 'Ya Ubangiji Allah Nayi Gaggawa Ne Zuwa Gareka Don In Samu Yerdarka',
+    scholarPhotoPath: 'assets/images/scholar_drjameel.png',
+  ),
+  Lesson(
+    id: 'ya_ubangiji_2',
+    title: 'Ya Ubangiji Allah Nayi Gaggawa Ne Zuwa Gareka Don In Samu Yerdarka - Part 2',
+    scholarName: 'Dr. Jameel Muhammad Sadis',
+    description: 'Part two of Ya Ubangiji Allah Nayi Gaggawa.',
+    audioAssetPath: 'assets/audio/Ya_Ubangiji_Allah_Nayi_Gaggawa_Ne_Zuwa_Gareka_Don_In_Samu_Yerdarka_2.ogg',
+    duration: Duration(minutes: 58, seconds: 4),
+    timeOfDay: LessonTime.any,
+    course: 'Ya Ubangiji Allah Nayi Gaggawa Ne Zuwa Gareka Don In Samu Yerdarka',
+    scholarPhotoPath: 'assets/images/scholar_drjameel.png',
+  ),
+
+  // ─── Mahangar Al-Qur'ani ─────────────────────────────────
+  Lesson(
+    id: 'mahangar_1',
+    title: 'Mahangar Al-Qur\'ani Game Da Munanan Aqidun \'Yan Kala-Kato - Part 1',
+    scholarName: 'Dr. Jameel Muhammad Sadis',
+    description: 'Part one of Mahangar Al-Qur\'ani Game Da Munanan Aqidun \'Yan Kala-Kato.',
+    audioAssetPath: 'assets/audio/Mahangar_AlQurani_Game_Da_Munanan_Aqidun_Yan_Kala_Kato_1.ogg',
+    duration: Duration(minutes: 66, seconds: 0),
+    timeOfDay: LessonTime.any,
+    course: 'Mahangar Al-Qur\'ani Game Da Munanan Aqidun \'Yan Kala-Kato',
+    scholarPhotoPath: 'assets/images/scholar_drjameel.png',
+  ),
+  Lesson(
+    id: 'mahangar_2',
+    title: 'Mahangar Al-Qur\'ani Game Da Munanan Aqidun \'Yan Kala-Kato - Part 2',
+    scholarName: 'Dr. Jameel Muhammad Sadis',
+    description: 'Part two of Mahangar Al-Qur\'ani Game Da Munanan Aqidun \'Yan Kala-Kato.',
+    audioAssetPath: 'assets/audio/Mahangar_AlQurani_Game_Da_Munanan_Aqidun_Yan_Kala_Kato_2.ogg',
+    duration: Duration(minutes: 67, seconds: 22),
+    timeOfDay: LessonTime.any,
+    course: 'Mahangar Al-Qur\'ani Game Da Munanan Aqidun \'Yan Kala-Kato',
+    scholarPhotoPath: 'assets/images/scholar_drjameel.png',
+  ),
+
+  // ─── Shaidar Al-Qur'ani Mai Tsarki ───────────────────────
+  Lesson(
+    id: 'shaidar_1',
+    title: 'Shaidar Al-Qur\'ani Mai Tsarki Game Da Sahabban Manzon Allah - Part 1',
+    scholarName: 'Dr. Jameel Muhammad Sadis',
+    description: 'Part one of Shaidar Al-Qur\'ani Mai Tsarki Game Da Sahabban Manzon Allah.',
+    audioAssetPath: 'assets/audio/Shaidar_Alqurani_Mai_Tsarki_Game_Da_Sahabban_Manzon_Allah_1.ogg',
+    duration: Duration(minutes: 62, seconds: 32),
+    timeOfDay: LessonTime.any,
+    course: 'Shaidar Al-Qur\'ani Mai Tsarki Game Da Sahabban Manzon Allah',
+    scholarPhotoPath: 'assets/images/scholar_drjameel.png',
+  ),
+  Lesson(
+    id: 'shaidar_2',
+    title: 'Shaidar Al-Qur\'ani Mai Tsarki Game Da Sahabban Manzon Allah - Part 2',
+    scholarName: 'Dr. Jameel Muhammad Sadis',
+    description: 'Part two of Shaidar Al-Qur\'ani Mai Tsarki Game Da Sahabban Manzon Allah.',
+    audioAssetPath: 'assets/audio/Shaidar_Alqurani_Mai_Tsarki_Game_Da_Sahabban_Manzon_Allah_2.ogg',
+    duration: Duration(minutes: 65, seconds: 25),
+    timeOfDay: LessonTime.any,
+    course: 'Shaidar Al-Qur\'ani Mai Tsarki Game Da Sahabban Manzon Allah',
+    scholarPhotoPath: 'assets/images/scholar_drjameel.png',
+  ),
+
+  // ─── Makon Sahabba Karo Na Biyu ──────────────────────────
+  Lesson(
+    id: 'makon_1',
+    title: 'Makon Sahabba Karo Na Biyu 2A',
+    scholarName: 'Dr. Jameel Muhammad Sadis',
+    description: 'Part 2A of Makon Sahabba Karo Na Biyu.',
+    audioAssetPath: 'assets/audio/Makon_Sahabba_Karo_Na_Biyu_1.ogg',
+    duration: Duration(minutes: 67, seconds: 21),
+    timeOfDay: LessonTime.any,
+    course: 'Makon Sahabba Karo Na Biyu',
+    scholarPhotoPath: 'assets/images/scholar_drjameel.png',
+  ),
+  Lesson(
+    id: 'makon_2',
+    title: 'Makon Sahabba Karo Na Biyu 2B',
+    scholarName: 'Dr. Jameel Muhammad Sadis',
+    description: 'Part 2B of Makon Sahabba Karo Na Biyu.',
+    audioAssetPath: 'assets/audio/Makon_Sahabba_Karo_Na_Biyu_2.ogg',
+    duration: Duration(minutes: 45, seconds: 45),
+    timeOfDay: LessonTime.any,
+    course: 'Makon Sahabba Karo Na Biyu',
+    scholarPhotoPath: 'assets/images/scholar_drjameel.png',
+  ),
+
+  // ─── Inama Za'a Dawomin Da Samartaka ─────────────────────
+  Lesson(
+    id: 'inama_1',
+    title: 'Inama Za\'a Dawomin Da Samartaka - Part 1',
+    scholarName: 'Dr. Jameel Muhammad Sadis',
+    description: 'Part one of Inama Za\'a Dawomin Da Samartaka.',
+    audioAssetPath: 'assets/audio/Inama_Zaa_Dawomin_Da_Samartaka_1.ogg',
+    duration: Duration(minutes: 59, seconds: 49),
+    timeOfDay: LessonTime.any,
+    course: 'Inama Za\'a Dawomin Da Samartaka',
+    scholarPhotoPath: 'assets/images/scholar_drjameel.png',
+  ),
+  Lesson(
+    id: 'inama_2',
+    title: 'Inama Za\'a Dawomin Da Samartaka - Part 2',
+    scholarName: 'Dr. Jameel Muhammad Sadis',
+    description: 'Part two of Inama Za\'a Dawomin Da Samartaka.',
+    audioAssetPath: 'assets/audio/Inama_Zaa_Dawomin_Da_Samartaka_2.ogg',
+    duration: Duration(minutes: 57, seconds: 35),
+    timeOfDay: LessonTime.any,
+    course: 'Inama Za\'a Dawomin Da Samartaka',
+    scholarPhotoPath: 'assets/images/scholar_drjameel.png',
+  ),
+
+  // ─── Hanyoyin Samun Albarka A Rayuwa ─────────────────────
+  Lesson(
+    id: 'hanyoyin_1',
+    title: 'Hanyoyin Samun Albarka A Rayuwa',
+    scholarName: 'Dr. Jameel Muhammad Sadis',
+    description: 'Hanyoyin Samun Albarka A Rayuwa.',
+    audioAssetPath: 'assets/audio/Hanyoyin_Samun_Albarka_A_Rayuwa_1.ogg',
+    duration: Duration(minutes: 76, seconds: 12),
+    timeOfDay: LessonTime.any,
+    course: 'Hanyoyin Samun Albarka A Rayuwa',
+    scholarPhotoPath: 'assets/images/scholar_drjameel.png',
+  ),
+
+  // ─── Maganin Damuwa ──────────────────────────────────────
+  Lesson(
+    id: 'maganin_1',
+    title: 'Maganin Damuwa',
+    scholarName: 'Dr. Jameel Muhammad Sadis',
+    description: 'Maganin Damuwa.',
+    audioAssetPath: 'assets/audio/Maganin_Damuwa_1.ogg',
+    duration: Duration(minutes: 74, seconds: 58),
+    timeOfDay: LessonTime.any,
+    course: 'Maganin Damuwa',
+    scholarPhotoPath: 'assets/images/scholar_drjameel.png',
+  ),
+
+  // ─── Aya Daya Mai Chanja Rayuwa ──────────────────────────
+  Lesson(
+    id: 'aya_daya_1',
+    title: 'Dr Jameel Aya Daya Mai Chanja Rayuwa',
+    scholarName: 'Dr. Jameel Muhammad Sadis',
+    description: 'Aya Daya Mai Chanja Rayuwa.',
+    audioAssetPath: 'assets/audio/Dr_Jameel_Aya_Daya_Mai_Chanja_Rayuwa_1.ogg',
+    duration: Duration(minutes: 77, seconds: 47),
+    timeOfDay: LessonTime.any,
+    course: 'Aya Daya Mai Chanja Rayuwa',
+    scholarPhotoPath: 'assets/images/scholar_drjameel.png',
+  ),
+
+  // ─── Trust The Trade ─────────────────────────────────────
+  Lesson(
+    id: 'trust_1',
+    title: 'Trust The Trade',
+    scholarName: 'Dr. Jameel Muhammad Sadis',
+    description: 'Trust The Trade.',
+    audioAssetPath: 'assets/audio/Trust_The_Trade_1.ogg',
+    duration: Duration(minutes: 49, seconds: 36),
+    timeOfDay: LessonTime.any,
+    course: 'Trust The Trade',
+    scholarPhotoPath: 'assets/images/scholar_drjameel.png',
+  ),
+];
